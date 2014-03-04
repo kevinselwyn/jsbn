@@ -1,0 +1,19 @@
+{
+	"name": "jsbn",
+	"version": "0.1.0",
+	"author": "Kevin Selwyn",
+	"licenses": [
+		{
+			"type": "GPLv3",
+			"url": "http://gnu.org/licenses/gpl-3.0.html"
+		}
+	],
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-contrib-clean": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-jslint": "*",
+		"matchdep": "*"
+	}
+}

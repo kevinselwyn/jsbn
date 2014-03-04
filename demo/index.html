@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jsbn</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script data-main="scripts/app.js" src="components/requirejs/require.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="hero-unit text-center">
+				<h1>jsbn</h1>
+				<fieldset style="display:inline-block;">
+					<legend>Enter a 10- or 13-digit ISBN</legend>
+					<form action="index.html" method="get">
+						<label for="isbn">ISBN:</label>
+						<input type="text" name="isbn" value="" id="isbn" /><br />
+						<label for="result">Result:</label>
+						<input type="text" name="result" value="" id="result" disabled="disabled" /><br />
+						<div class="radio" style="width:180px; margin:0 auto;">
+							<label>
+								<input type="radio" name="operation" value="check10" checked="checked" /> Validate 10-digit
+							</label>
+						</div>
+						<div class="radio" style="width:180px; margin:0 auto;">
+							<label>
+								<input type="radio" name="operation" value="check13" /> Validate 13-digit
+							</label>
+						</div>
+						<div class="radio" style="width:180px; margin:0 auto;">
+							<label>
+								<input type="radio" name="operation" value="checkDigit10" /> 10-digit Check Digit
+							</label>
+						</div>
+						<div class="radio" style="width:180px; margin:0 auto;">
+							<label>
+								<input type="radio" name="operation" value="checkDigit13" /> 13-digit Check Digit
+							</label>
+						</div>
+						<div class="radio" style="width:180px; margin:0 auto;">
+							<label>
+								<input type="radio" name="operation" value="convert" /> Convert to 13-digit
+							</label>
+						</div>
+						<br />
+						<input type="submit" class="btn btn-large btn-success" id="submit" />
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
