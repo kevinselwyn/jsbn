@@ -1,10 +1,10 @@
-#jsbn
+# jsbn
 
 Utility for validating 10- and 13-digit ISBNs.
 
 [Demo](http://kevinselwyn.com/jsbn/)
 
-##Usage
+## Usage
 
 Include the script in your document:
 
@@ -16,13 +16,13 @@ If you are using a module loader like [RequireJS](http://requirejs.org), require
 
 ```js
 require(["dist/jsbn.min"], function (jsbn) {
-	
+
 });
 ```
 
-##Functions
+## Functions
 
-###jsbn.check10()
+### jsbn.check10()
 
 Validate a 10-digit ISBN
 
@@ -31,7 +31,7 @@ jsbn.check10("0-306-40615-2");
 // Returns true
 ```
 
-###jsbn.checkDigit10()
+### jsbn.checkDigit10()
 
 Given 9 digits of an ISBN, it will calculate the final check digit
 
@@ -40,7 +40,7 @@ jsbn.checkDigit10("0-306-40615");
 // Returns "2"
 ```
 
-###jsbn.check13()
+### jsbn.check13()
 
 Validate a 13-digit ISBN
 
@@ -49,7 +49,7 @@ jsbn.check13("978-0-306-40615-7");
 // Returns true
 ```
 
-###jsbn.checkDigit13()
+### jsbn.checkDigit13()
 
 Given 12 digits of an ISBN, it will calculate the final check digit
 
@@ -58,7 +58,7 @@ jsbn.checkDigit13("978-0-306-40615");
 // Returns "7"
 ```
 
-###jsbn.convert()
+### jsbn.convert()
 
 Converts a 10-digit ISBN to a 13-digit ISBN
 
@@ -77,7 +77,7 @@ jsbn.convert("0-306-40615-2", "xxx-xxx-xxx-xxx-x");
 // Returns "978-030-640-615-7"
 ```
 
-##Testing
+## Testing
 
 Test with [nodeunit](https://github.com/caolan/nodeunit):
 
